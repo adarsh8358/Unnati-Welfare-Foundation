@@ -1,0 +1,70 @@
+// Nav Section Styles
+
+
+@media (min-width: 768px) {
+  .nav-section {
+    padding: 0 40px;
+
+    .logo img {
+      height: 80px;
+      padding-top: 0.3rem;
+    }
+
+    .mobile-icons,
+    .mobile-menu {
+      display: none;
+    }
+
+    .desktop-items {
+      display: flex;
+      gap: 20px;
+      margin-left: auto;
+      margin-right: 120px;
+
+      a {
+        color: #333;
+        text-decoration: none;
+        font-weight: 500;
+
+        &:hover {
+          color: #c68b2c;
+        }
+      }
+    }
+
+    .donate-wrapper {
+      position: absolute;
+      right: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      .donate {
+        background-color: #c68b2c;
+        color: #fff;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 6px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #a87424;
+        }
+      }
+    }
+  }
+}
+
+// Footer Section Styles
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-links,
+  .footer-contact {
+    margin-top: 20px;
+  }
+}

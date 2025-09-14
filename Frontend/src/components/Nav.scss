@@ -1,0 +1,116 @@
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-section {
+  height: 80px;
+  width: 100%;
+  // background-color: #ffffff;
+  // background-color: #ffffff1f;
+  background-color: transparent;
+  // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  opacity: 0;
+  /* Start hidden */
+  animation: fadeSlideUp 1s ease forwards;
+
+  .logo img {
+    height: 60px;
+    mix-blend-mode: multiply;
+    cursor: pointer;
+    padding-top: 0.5rem;
+  }
+
+  .right-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .donate-wrapper .donate {
+    background-color: #c68b2c;
+    color: #fff;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+
+    &:hover {
+      background-color: #a87424;
+    }
+  }
+
+  .mobile-icons {
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1100;
+    color: #c68b2c;
+  }
+
+  .desktop-items {
+    display: none;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 70%;
+    // background-color: #000;
+    background-color: #FEE2AD;
+    // background-color: #ffffff80;
+    padding: 100px 20px 20px;
+    transform: translateX(100%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 1050;
+
+    .mobile-items a {
+      display: block;
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 15px;
+      text-decoration: none;
+
+      &:hover {
+        color: #c68b2c;
+      }
+    }
+
+    .socialmedia {
+      margin-top: auto;
+      display: flex;
+      gap: 15px;
+
+      i {
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+
+        &:hover {
+          color: #c68b2c;
+        }
+      }
+    }
+  }
+}
