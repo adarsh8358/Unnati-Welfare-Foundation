@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import gsap from "gsap";
 import "./Nav.scss";
-import "./responsive.scss";
+import "./Responsive.scss";
 import logo from "../assets/logo.jpeg";
 
 const Nav = () => {
